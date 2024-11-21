@@ -1,0 +1,52 @@
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Generated PDF files
+*.pdf
+
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Build tool directories
+build/
+
+## Additional LaTeX temporary files
+*.dvi
+*.xdv
+*-converted-to.*
+
+## Bibliography auxiliary files
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+## Other LaTeX-related files
+*.nav
+*.pre
+*.snm
+*.vrb
+
+## Editor backup files
+*~
+*.bak
+*.backup
+.*.swp

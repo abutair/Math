@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage[margin=0.5in]{geometry}  % Set all margins to 0.5 inch
+
+% Remove extra space around section headers
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+% Adjust equation spacing
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\setlength{\abovedisplayshortskip}{3pt}
+\setlength{\belowdisplayshortskip}{3pt}
+
+\begin{document}
+\section*{Echelon Form vs. Reduced Row Echelon Form (RREF)}
+
+\subsection*{Echelon Form (Previously called Triangle Form)}
+A matrix is in Echelon Form if:
+\begin{enumerate}
+    \item All non-zero rows are above all zero rows
+    \item Each leading entry of a row is in a column to the right of the leading entry of the row above it
+    \item All entries in a column below a leading entry are zeros
+\end{enumerate}
+
+\subsection*{Reduced Row Echelon Form (RREF)}
+A matrix is in RREF if it satisfies all conditions of Echelon Form and:
+\begin{enumerate}
+    \item The leading entry in each non-zero row is 1
+    \item Each leading 1 is the only non-zero entry in its column
+\end{enumerate}
+
+\subsection*{Pivot Terminology}
+\begin{itemize}
+    \item \textbf{Pivot Position:} Corresponds to leading 1 in RREF
+    \item \textbf{Pivot Column:} The column that contains the pivot
+    \item \textbf{Pivot:} Nonzero number in pivot position used to create zeros in row operations
+\end{itemize}
+
+\section*{The Row Reduction Algorithm}
+
+The following steps describe the process of reducing a matrix to Reduced Row Echelon Form (RREF):
+
+\begin{enumerate}
+    \item Begin at leftmost nonzero column, which is a pivot column. Select a nonzero entry as pivot and interchange, if necessary, to move that entry into the pivot position (Row 1).
+    
+    \item Use row operations to create zeros in all entries below the pivot.
+    
+    \item Repeat this process for remaining rows, ignoring rows you've already applied algorithm to.
+    
+    \item Ensure each pivot is a 1, using scaling operations as necessary.
+    
+    \item Beginning with the rightmost pivot and working upwards and to the left, use row operations to create zeros above each pivot.
+\end{enumerate}
+
+Example working matrix:
+\[
+\begin{bmatrix}
+1 & 0 & -3 & | & 8 \\
+0 & 1 & \frac{15}{2} & | & -\frac{9}{2} \\
+0 & 0 & 1 & | & -1
+\end{bmatrix}
+\]
+
+This systematic process transforms the matrix into RREF, making the system easier to solve.
+
+\end{document}

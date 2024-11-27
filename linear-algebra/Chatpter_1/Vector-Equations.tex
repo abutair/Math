@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Vectors in $\mathbb{R}^2$}
+\author{Notes}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Basic Definitions}
+
+\subsection{Vectors}
+A vector is an ordered list of numbers. In $\mathbb{R}^2$, vectors are represented as ordered pairs of real numbers.
+
+\subsection{Column Vectors}
+A column vector is a vector with only one column. These are commonly used to represent ordered pairs, triples, etc. In $\mathbb{R}^2$, a column vector has the form:
+\[
+\vec{u} = \begin{bmatrix} u_1 \\ u_2 \end{bmatrix}
+\]
+
+\section{Vector Operations}
+
+\subsection{Basic Operations}
+For vectors in $\mathbb{R}^2$, we have the following operations:
+
+\begin{enumerate}
+    \item \textbf{Scalar Multiplication:} Multiply vector by a constant
+    \[
+    c\vec{u} = \begin{bmatrix} cu_1 \\ cu_2 \end{bmatrix}
+    \]
+    
+    \item \textbf{Addition:} Add corresponding values
+    \[
+    \vec{u} + \vec{v} = \begin{bmatrix} u_1 + v_1 \\ u_2 + v_2 \end{bmatrix}
+    \]
+    
+    \item \textbf{Multiplication:} Not defined for vectors (dimensions don't work)
+\end{enumerate}
+
+\section{Special Vectors}
+
+\subsection{Zero Vector}
+The zero vector, denoted by $\vec{0}$, is the vector whose entries are all 0:
+\[
+\vec{0} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
+\]
+
+\section{Algebraic Properties}
+For vectors $\vec{u}$, $\vec{v}$, $\vec{w}$ in $\mathbb{R}^n$ and scalars $c$, $d$:
+
+\begin{enumerate}
+    \item \textbf{Commutativity of Addition:}
+    \[
+    \vec{u} + \vec{v} = \vec{v} + \vec{u}
+    \]
+    
+    \item \textbf{Associativity of Addition:}
+    \[
+    (\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})
+    \]
+    
+    \item \textbf{Additive Identity:}
+    \[
+    \vec{u} + \vec{0} = \vec{0} + \vec{u} = \vec{u}
+    \]
+    
+    \item \textbf{Additive Inverse:}
+    \[
+    \vec{u} + (-\vec{u}) = (-\vec{u}) + \vec{u} = \vec{0}
+    \]
+    
+    \item \textbf{Distributive Properties:}
+    \[
+    c(\vec{u} + \vec{v}) = c\vec{u} + c\vec{v}
+    \]
+    \[
+    (c + d)\vec{u} = c\vec{u} + d\vec{u}
+    \]
+    
+    \item \textbf{Scalar Multiplication Properties:}
+    \[
+    c(d\vec{u}) = (cd)\vec{u}
+    \]
+    \[
+    1\vec{u} = \vec{u}
+    \]
+\end{enumerate}
+
+\section{Example}
+Given vectors $\vec{u} = \begin{bmatrix} 2 \\ 3 \end{bmatrix}$ and $\vec{v} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}$, we can perform operations:
+
+\begin{align*}
+\vec{u} + \vec{v} &= \begin{bmatrix} 2 \\ 3 \end{bmatrix} + \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} 1 \\ 5 \end{bmatrix} \\
+2\vec{u} &= 2\begin{bmatrix} 2 \\ 3 \end{bmatrix} = \begin{bmatrix} 4 \\ 6 \end{bmatrix}
+\end{align*}
+
+These operations can be visualized geometrically on a coordinate plane, where vectors are represented as arrows from the origin to their terminal point.
+
+\end{document}
